@@ -33,7 +33,7 @@ limit = int(sys.argv[2])
 headers = {"origin": "https://www.facebook.com", 
 "accept-encoding": "gzip,deflate", 
 "accept-language": "en-US,en;q=0.8", 
-"cookie": "your_cookie_value", 
+"cookie": "datr=XdSrUygjD80dT9ik9WAiPPD6; lu=ghRQ682B9Guv6oilMKDxf_Bw; js_ver=1941; c_user=100000378864191; fr=0OfF0pSNokfZMxkBU.AWX3eNIAHBGyNsaDFyFkIAcx61M.BUGouh.Ky.FU9.0.AWUtc7gY; xs=119%3AQ1QyL9n5oXs43w%3A2%3A1422377708%3A20366; csm=2; s=Aa40jPmkI4TAd45W.BVPXSu; act=1430341853844%2F0; p=-2; presence=EM430342005EuserFA21B00378864191A2EstateFDsb2F1430335320722Et2F_5bDiFA2user_3a662640544A2ErF1C_5dElm2FA2user_3a662640544A2Euct2F1430309854613EtrFA2loadA2EtwF1541516167EatF1430341995817G430342005989CEchFDp_5f1B00378864191F5CC; wd=1366x383", 
 "pragma": "no-cache", 
 "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36", 
 "content-type": "application/x-www-form-urlencoded", 
@@ -60,13 +60,13 @@ while end_mark not in messages_data:
 	data_text = {"messages[user_ids][" + str(talk) + "][offset]": str(offset), 
 	"messages[user_ids][" + str(talk) + "][limit]": str(limit), 
 	"client": "web_messenger", 
-	"__user": "your_user_id", 
-	"__a": "your __a", 
-	"__dyn": "your __dyn", 
-	"__req": "your __req", 
-	"fb_dtsg": "your_fb_dtsg", 
-	"ttstamp": "your_ttstamp", 
-	"__rev": "your __rev"}
+	"__user": "100000378864191", 
+	"__a": "1", 
+	"__dyn": "7nmajEyl2lm9r88DgDxiWOGeFDzECiq78hAKGhVoyupFLHwxBxvyUWdwIhEoyUnwPUS2O4K5ebAxacFoydCxuFE", 
+	"__req": "k", 
+	"fb_dtsg": "AQEF5m6xMNcT", 
+	"ttstamp": "265816970531095412077789984", 
+	"__rev": "1712621"}
 	data = urllib.urlencode(data_text)
 	url = "https://www.facebook.com/ajax/mercury/thread_info.php"
 	
